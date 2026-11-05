@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+}
+
+/* Specific styling for internal and external contextual links in content blocks */
+.content-body a:not([class*="btn"]):not([class*="no-style"]),
+.inline-link {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #f59e0b; /* Popup contrast color */
+  text-underline-offset: 4px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.content-body a:not([class*="btn"]):not([class*="no-style"]):hover,
+.inline-link:hover {
+  color: #0369a1;
+  background-color: #fef3c7; /* Warm popup highlight background */
+  text-decoration-color: #d97706;
+  text-shadow: 0 0 1px rgba(217, 119, 6, 0.2);
+}
+
+/* Animations */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.95; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s infinite ease-in-out;
+}
