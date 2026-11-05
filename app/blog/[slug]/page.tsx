@@ -78,7 +78,7 @@ export default function BlogPostReaderPage({ params }: BlogPostPageProps) {
   };
 
   return (
-    <div className="space-y-12">
+    <div>
       {/* Schema Injection */}
       <script
         type="application/ld+json"
@@ -92,6 +92,8 @@ export default function BlogPostReaderPage({ params }: BlogPostPageProps) {
           { label: post.title },
         ]}
       />
+
+      <div className="pt-6 sm:pt-8 space-y-10 sm:space-y-12">
 
       {/* Article Header */}
       <header className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center">
@@ -206,6 +208,7 @@ export default function BlogPostReaderPage({ params }: BlogPostPageProps) {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <QuoteForm />
       </section>
+      </div>
     </div>
   );
 }

@@ -63,11 +63,12 @@ export default function BlogHubPage() {
   };
 
   return (
-    <div className="space-y-12 lg:space-y-16">
+    <div>
       {/* Breadcrumb Navigation */}
       <Breadcrumbs items={[{ label: 'Blog & Safety Resources' }]} />
 
-      {/* Hero Header */}
+      <div className="space-y-12 lg:space-y-16">
+        {/* Hero Header */}
       <section className="relative bg-gradient-to-r from-navy-950 via-slate-900 to-navy-900 text-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 px-3.5 py-1.5 rounded-full text-xs font-semibold text-amber-300 uppercase tracking-wider">
@@ -196,6 +197,7 @@ export default function BlogHubPage() {
           externalLink={blogExternalLink}
         />
       </section>
+      </div>
     </div>
   );
 }

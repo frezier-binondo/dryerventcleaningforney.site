@@ -74,11 +74,12 @@ export default function LocationsHubPage() {
   };
 
   return (
-    <div className="space-y-12 lg:space-y-16">
+    <div>
       {/* Breadcrumbs */}
       <Breadcrumbs items={[{ label: 'Service Areas' }]} />
 
-      {/* Hero Header with Background Image & Call CTA Only (Goal: Generate Calls) */}
+      <div className="space-y-12 lg:space-y-16">
+        {/* Hero Header with Background Image & Call CTA Only (Goal: Generate Calls) */}
       <section className="relative isolate min-h-[460px] sm:min-h-[500px] flex items-center justify-center bg-navy-950 text-white overflow-hidden py-14 sm:py-20">
         <Image
           src="/images/dryer-vent-cleaning.jpg"
@@ -238,6 +239,7 @@ export default function LocationsHubPage() {
           externalLink={hubExternalLink}
         />
       </section>
+      </div>
     </div>
   );
 }

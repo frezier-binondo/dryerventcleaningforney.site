@@ -80,7 +80,7 @@ export default function LocationSubPage({ params }: LocationPageProps) {
   };
 
   return (
-    <div className="space-y-12 lg:space-y-16">
+    <div>
       {/* Schema Injection */}
       <script
         type="application/ld+json"
@@ -95,7 +95,8 @@ export default function LocationSubPage({ params }: LocationPageProps) {
         ]}
       />
 
-      {/* Hero Header with Background Image & Call CTA Only (Goal: Generate Calls) */}
+      <div className="space-y-12 lg:space-y-16">
+        {/* Hero Header with Background Image & Call CTA Only (Goal: Generate Calls) */}
       <section className="relative isolate min-h-[460px] sm:min-h-[500px] flex items-center justify-center bg-navy-950 text-white overflow-hidden py-14 sm:py-20">
         <Image
           src={loc.image}
@@ -313,6 +314,7 @@ export default function LocationSubPage({ params }: LocationPageProps) {
           externalLink={loc.externalLink}
         />
       </section>
+      </div>
     </div>
   );
 }

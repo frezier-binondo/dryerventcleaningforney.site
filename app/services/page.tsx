@@ -89,11 +89,12 @@ export default function ServicesPillarPage() {
   };
 
   return (
-    <div className="space-y-14">
+    <div>
       {/* Breadcrumb Navigation */}
       <Breadcrumbs items={[{ label: 'Services Silo' }]} />
 
-      {/* Hero Header with Background Image & Call CTA Only (Goal: Generate Calls) */}
+      <div className="space-y-14">
+        {/* Hero Header with Background Image & Call CTA Only (Goal: Generate Calls) */}
       <section className="relative isolate min-h-[480px] sm:min-h-[540px] flex items-center justify-center bg-navy-950 text-white overflow-hidden py-16 sm:py-20">
         <Image
           src="/images/commercial-dryer-vent-cleaning.jpg"
@@ -328,6 +329,7 @@ export default function ServicesPillarPage() {
           externalLink={pillarExternalLink}
         />
       </section>
+      </div>
     </div>
   );
 }

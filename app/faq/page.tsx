@@ -62,11 +62,12 @@ export default function FaqPage() {
   };
 
   return (
-    <div className="space-y-12 lg:space-y-16">
+    <div>
       {/* Breadcrumb Navigation */}
       <Breadcrumbs items={[{ label: 'Frequently Asked Questions' }]} />
 
-      {/* Hero Header */}
+      <div className="space-y-12 lg:space-y-16">
+        {/* Hero Header */}
       <section className="relative bg-gradient-to-r from-navy-950 via-slate-900 to-navy-900 text-white py-14 lg:py-20 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-400/20 px-3.5 py-1.5 rounded-full text-xs font-semibold text-sky-300 uppercase tracking-wider">
@@ -106,6 +107,7 @@ export default function FaqPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <QuoteForm />
       </section>
+      </div>
     </div>
   );
 }
